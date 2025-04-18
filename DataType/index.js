@@ -59,3 +59,49 @@ let types = [name, age, isStudent, notAssigned, emptyValue, bigNumber, sym, pers
 types.forEach((item, index) => {
   console.log(`Type of item[${index}]:`, typeof item);
 });
+
+
+
+
+
+// 🔹 Primitive Data Types (Basic Types)
+// String:
+// Text inside quotes. Example: "Abdullah"
+// → Used to store names, sentences, etc.
+
+// Number:
+// Can be whole or decimal. Example: 21, 3.14
+// → Used for age, price, etc.
+
+// Boolean:
+// Only true or false
+// → Used for yes/no type answers.
+
+// Undefined:
+// A variable declared but not given any value.
+// → Means "nothing assigned yet".
+
+// Null:
+// Empty value on purpose.
+// → Means "nothing" or "cleared".
+
+// BigInt:
+// Very large numbers. Ends with n.
+// → Used when normal numbers are not enough.
+
+// Symbol:
+// Unique and hidden identifiers.
+// → Mostly used in advanced coding.
+
+// 🔸 Non-Primitive Data Types (Complex Types)
+// Object:
+// Stores data in key-value pairs like a mini database.
+// → Used for things with many properties like a person (name, age, etc.).
+
+// Array:
+// A list of values in square brackets.
+// → Used to store multiple items like skills or numbers.
+
+// Function:
+// A block of code that does something when called.
+// → Used to perform actions or return results.
