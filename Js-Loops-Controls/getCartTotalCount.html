@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+   <title>Cart Counter</title>
+ </head>
+ <body>
+   <h2>🛒 Cart Items: <span id="cart-count">0</span></h2>
+
+   <button onclick="addToCart('apple')">Add Apple</button>
+   <button onclick="addToCart('banana')">Add Banana</button>
+   <button onclick="addToCart('mango')">Add Mango</button>
+
+   <script>
+     // Inventory object
+     let inventory = {};
+
+     function addToCart(item) {
+       // If item already in cart, increase it
+       if (inventory[item]) {
+         inventory[item]++;
+       } else {
+         inventory[item] = 1;
+       }
+      // Calculate total count
+      let total = 0;
+      for (let key in inventory) {
+        total += inventory[key];
+      }
+       // Show on screen
+      document.getElementById("cart-count").innerText = total;
+
+        // Optional: Log to see the inventory
+       console.log("Cart:", inventory);
+     }
+   </script>
+ </body>
+ </html>
+ 
