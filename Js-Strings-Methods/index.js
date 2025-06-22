@@ -1,85 +1,22 @@
-// //carAt 
-// //This is also zero-based-index
+// =========================
+// 🎯 What is a String?
+// =========================
 
-// // let str = "abdullah";
-// // let newString = str.charAt(2);
-// // console.log(newString);
+// ✅ A string is a sequence of characters used to represent text.
 
+let userName = "Abdullah";
 
+// ✅ Strings are immutable (can't be changed in-place).
+// ✅ Strings are zero-indexed like arrays.
 
-// //Length
+console.log("First char:", userName[0]); // A
 
-
-// // let str = "mara name abdullah hai ";
-// // let lengthOfString = str.length;  
-// // console.log(lengthOfString); //Output is 23 
-
-
- 
-// //Concat ======>>> Connncting two Strings 
-
-// // let str1 = "Muhammad ";
-// // let str2 = "Abdullah ";
-// // let str3 = str1.concat(str2);
-// // console.log(str3); // Output is Muhammad Abdullah
-
-// //To Upper Case 
-
-// // let str1 = "Muhammad ";
-// // let str2 = str1.toUpperCase();
-// // console.log(str2); //MUHAMMAD;
-
-
-// //To Lower case 
-
-// // let str1 = "Muhammad ";
-// // let str2 = str1.toLowerCase();
-// // console.log(str2); //muhammad;
-
-
-// // Includes it returns the value true or false 
-// // Here we give the substring if the substring exist it return true and vice verse
-
-
-// // let substring = "ull";
-// // let str = "abdullah";
-// // console.log(str.includes(substring)); // true
+// =========================
+// ✨ String Methods
+// =========================
 
 
 
-// //Slice 
-// // let str = "frontend";
-// // console.log(str.slice(0,5)); //front
-
-// //Substrings 
-
-// // let str = "frontend";
-// // console.log(str.substring(0,5)); // same as the slice but it does not contain the negative index 
-
-
-// // let old = "abdullah";
-// // let newStr = "rajab";
-// // console.log(old.replace(old,newStr));
-
-// //  "code".replace("c", "m") ➝ "mode"
-
-
-// // let str =  " abdullah ";
-// // console.log(str.trim());// trim remove the while spacse from start and end;
-
-
-// // split 
-// // .split() method is used to split a string into an array of substrings
-
-// // let str = "Hello my name is Abdullah";
-// // let result = str.split(" ");
-// // console.log(result); 
-// // Output: ["Hello", "my", "name", "is", "Abdullah"]
-
-// let fruits = "apple,banana,mango";
-// let result = fruits.split(",");
-// console.log(result); 
-// // Output: ["apple", "banana", "mango"]
 
 
 // =======================
