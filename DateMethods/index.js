@@ -1,8 +1,5 @@
 
 const date = new Date(); // Gets the current date and time
-
-
-
 console.log(date.getDate());       
 // 📌 Returns the day of the month (1–31)
 // 🧪 Example Output: 23
@@ -22,10 +19,6 @@ console.log(date.getMonth());
 console.log(date.getTime());       
 // 📌 Returns the number of milliseconds since Jan 1, 1970 (Unix timestamp)
 // 🧪 Example Output: 1750669523190
-
-
-
-
 console.log(date.toDateString());        
 // 📌 Returns date in readable format
 // 🧪 Output: "Mon Jun 23 2025"
