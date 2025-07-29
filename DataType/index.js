@@ -1,3 +1,10 @@
+//The primitive data type copy the original value and the change occur in the copied item like given example
+let a =12;
+let b = a;
+++b; //Here we changed the value of b here the change occur only in the b not in the a  
+console.log(a); // 12
+console.log(b); // 13
+
 // 🔹 Primitive Data Types
 
 // String
@@ -32,6 +39,12 @@ console.log("Symbol:", sym, "| Type:", typeof sym);
 
 
 // 🔸 Non-Primitive (Reference) Data Types
+// The primitive Data type change the original array because the got the refernce.
+let arr = [1,2,3];
+let secondArr = arr;
+secondArr.pop();
+console.log(arr); // [1,2] Here change occur in both 
+console.log(secondArr); // [1,2] Here also
 
 // Object
 let person = {

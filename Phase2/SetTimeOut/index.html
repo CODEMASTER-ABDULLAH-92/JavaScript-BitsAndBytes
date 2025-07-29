@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Progress Tracker</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f5f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .download-container {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 480px;
+      padding: 30px 25px;
+      text-align: center;
+    }
+    
+    .download-header {
+      margin-bottom: 20px;
+    }
+    
+    .download-header h1 {
+      color: #2c3e50;
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+    
+    .download-header p {
+      color: #7f8c8d;
+      font-size: 15px;
+    }
+    
+    .file-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      align-items: center;
+    }
+    
+    .file-info-item {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #2c3e50;
+    }
+    
+    .file-info-item img {
+      width: 22px;
+      height: 22px;
+      margin-right: 8px;
+    }
+    
+    .progress-container {
+      width: 100%;
+      background-color: #ecf0f1;
+      border-radius: 50px;
+      height: 16px;
+      margin: 25px 0;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .progress-bar {
+      height: 100%;
+      /* width: 44%; */
+      background: linear-gradient(90deg, #3498db, #2ecc71);
+      border-radius: 50px;
+      transition: width 0.5s ease;
+      position: relative;
+    }
+    
+    .progress-percentage {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      font-size: 11px;
+      font-weight: bold;
+    }
+    
+    .download-btn {
+      background: linear-gradient(90deg, #3498db, #2ecc71);
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: all 0.3s ease;
+    }
+    
+    .download-btn:hover {
+      background: linear-gradient(90deg, #2ecc71, #3498db);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(41, 128, 185, 0.25);
+    }
+    
+    .status-message {
+      margin-top: 15px;
+      color: #7f8c8d;
+      font-size: 14px;
+    }
+    
+    @media (max-width: 480px) {
+      .download-container {
+        padding: 20px;
+      }
+      
+      .download-header h1 {
+        font-size: 22px;
+      }
+      
+      .download-btn {
+        font-size: 14px;
+        padding: 10px 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="download-container">
+    <div class="download-header">
+      <h1>Download in Progress</h1>
+      <p>Your file is being downloaded securely</p>
+    </div>    
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar">
+        <span class="progress-percentage" id="progressPercentage">0%</span>
+      </div>
+    </div>
+    
+    <div class="status-message" id="statusMessage">
+      Preparing download...
+    </div>
+    
+    <button class="download-btn" id="downloadBtn">
+      Start Download
+    </button>
+  </div>
+  <script src="script.js">
+  </script>
+</body>
+</html>

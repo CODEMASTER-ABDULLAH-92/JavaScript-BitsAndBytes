@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Char Counter</title>
+  <style>
+    :root {
+      --primary: #3498db;
+      --secondary: #2ecc71;
+      --bg: #f5f6fa;
+      --text-dark: #2c3e50;
+      --text-light: #7f8c8d;
+      --radius: 12px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px 24px;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    .card h2 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: var(--text-dark);
+    }
+
+    .card input {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 14px;
+      border: 1px solid #ccc;
+      border-radius: var(--radius);
+      outline: none;
+      font-size: 15px;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+
+    .card input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+    }
+
+    .counter {
+      font-size: 14px;
+      color: var(--text-light);
+      margin-top: 5px;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px;
+      }
+
+      .card h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>JS Char Counter</h2>
+    <input type="text" id="textInput" placeholder="Type something...">
+  </div>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
