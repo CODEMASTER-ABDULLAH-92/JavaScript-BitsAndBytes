@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App</title>
+  <style>
+    .card {
+      height: 40px;
+      width: 200px;
+      border: 1px solid rgb(34, 34, 34);
+      border-radius: 10px;
+      margin: 5px;
+      padding: 5px;
+    }
+    .mainDev {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .add {
+      padding: 8px 15px;
+      background: #444;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="mainDev">
+    <input type="text" placeholder="Enter the text...">
+    <div class="add">Add Notes</div>
+  </div>
+
+  <div id="cardsContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
