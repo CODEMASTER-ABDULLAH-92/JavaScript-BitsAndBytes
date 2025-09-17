@@ -2,40 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notes App</title>
+  <title>Notes Saver App</title>
   <style>
-    .card {
-      height: 40px;
-      width: 200px;
-      border: 1px solid rgb(34, 34, 34);
-      border-radius: 10px;
-      margin: 5px;
-      padding: 5px;
-    }
-    .mainDev {
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
       display: flex;
-      gap: 10px;
-      margin-bottom: 10px;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
     }
-    .add {
-      padding: 8px 15px;
-      background: #444;
+
+    .container {
+      width: 400px;
+      margin-top: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .title {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .note-input {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      outline: none;
+      resize: none;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .add-btn {
+      background: #4CAF50;
       color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
       cursor: pointer;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+
+    .add-btn:hover {
+      background: #45a049;
+    }
+
+    .notes-list {
+      margin-top: 20px;
+    }
+
+    .note {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .note-text {
+      flex: 1;
+      margin-right: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .edit-btn, .delete-btn {
+      padding: 5px 8px;
+      font-size: 12px;
+      border: none;
       border-radius: 5px;
-      user-select: none;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+      color: white;
+    }
+
+    .edit-btn {
+      background: #2196F3;
+    }
+
+    .delete-btn {
+      background: #f44336;
+      margin-left: 5px;
+    }
+
+    .edit-btn:hover, .delete-btn:hover {
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
-  <div class="mainDev">
-    <input type="text" placeholder="Enter the text...">
-    <div class="add">Add Notes</div>
+  <div class="container">
+    <h1 class="title">Notes Saver</h1>
+    <textarea class="note-input" placeholder="Write your note here..."></textarea>
+    <button class="add-btn">Add Note</button>
   </div>
-
-  <div id="cardsContainer"></div>
-
   <script src="script.js"></script>
 </body>
 </html>
